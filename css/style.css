@@ -1,0 +1,386 @@
+/* --- Variabel Warna --- */
+:root {
+    --primary-color: #228B22; /* Forest Green */
+    --secondary-color: #FFD700; /* Gold (digunakan untuk aksen) */
+    
+    --light-bg: #F0F8FF; /* Alice Blue - Latar Belakang Terang */
+    --dark-bg: #36454F; /* Charcoal - Latar Belakang Gelap (untuk header/footer) */
+    
+    --text-color: #36454F;
+    --light-text-color: #E0E0E0; 
+    --muted-text-color: #6c757d;
+
+    --primary-color-rgb: 34, 139, 34;
+    --secondary-color-rgb: 255, 215, 0;
+    --text-color-rgb: 54, 69, 79;
+    --light-text-color-rgb: 224, 224, 224;
+}
+
+/* --- Gaya Umum --- */
+body {
+    font-family: 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+    line-height: 1.6;
+    color: var(--text-color); 
+    background-color: var(--light-bg); 
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--text-color); 
+    font-weight: 700;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+a {
+    color: var(--primary-color); 
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+a:hover {
+    color: #1a6f1a; 
+    text-decoration: underline;
+}
+
+/* --- Header (NavBar) --- */
+.navbar.bg-dark {
+    background-color: var(--dark-bg) !important;
+}
+
+.navbar-brand,
+.navbar-nav .nav-link {
+    color: var(--light-text-color) !important;
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link:hover {
+    color: var(--secondary-color) !important;
+}
+
+/* --- Hero Section --- */
+.hero-section {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../assets/img/hero-background-forest.jpg') no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+    color: var(--light-text-color);
+    padding: 10rem 0;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.8);
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-section h1 {
+    color: var(--primary-color); 
+    text-shadow: 0px 0px 10px rgba(0,0,0,0.8);
+}
+
+.hero-section .btn {
+    transition: all 0.3s ease-in-out;
+}
+
+.hero-section .btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+}
+
+/* --- Hero Section Halaman Flora --- */
+.hero-section.flora-hero {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../assets/img/hero-background-flora.jpg') no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* --- Hero Section Halaman Fauna --- */
+.hero-section.fauna-hero {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../assets/img/hero-background-fauna.jpeg') no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* --- Hero Section Halaman Galeri --- */
+.hero-section.galeri-hero {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../assets/img/hero-background-galeri.jpeg') no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.gallery-item .gallery-img {
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px; 
+}
+
+.gallery-item {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.gallery-item:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+/* --- Hero Section Halaman Kontak --- */
+.hero-section.kontak-hero {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../assets/img/hero-background-kontak.jpeg') no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* --- Hero Section Halaman Tentang Kami --- */
+.hero-section.about-hero {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../assets/img/hero-background-about.jpeg') no-repeat center center; 
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#our-values .p-4 {
+    border: 1px solid rgba(var(--primary-color-rgb), 0.2) !important; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#our-values .p-4:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+#our-values .text-primary { 
+    color: var(--primary-color) !important;
+}
+
+#additional-info .p-4 {
+    border: 1px solid var(--primary-color-rgb, 60, 179, 113) !important; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#additional-info .p-4:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+#additional-info .text-success { 
+    color: var(--primary-color) !important;
+}
+
+#additional-info .text-success:hover {
+    color: #1a6f1a !important;
+}
+
+/* --- Gaya Tombol Kustom --- */
+.btn-custom-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: var(--light-text-color);
+    font-weight: 600;
+    padding: 0.8rem 2rem;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+}
+
+.btn-custom-primary:hover {
+    background-color: #1a6f1a;
+    border-color: #1a6f1a;
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.btn-outline-light { 
+    border-radius: 50px;
+    font-weight: 600;
+    padding: 0.8rem 2rem;
+    transition: all 0.3s ease;
+    color: var(--light-text-color); 
+    border-color: var(--light-text-color); 
+}
+
+.btn-outline-light:hover {
+    background-color: rgba(var(--light-text-color-rgb), 0.1);
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    color: var(--secondary-color); 
+    border-color: var(--secondary-color); 
+}
+
+.btn-outline-secondary { 
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-outline-secondary:hover {
+    background-color: var(--primary-color);
+    color: var(--light-text-color);
+}
+
+
+/* --- Bagian Tentang Kami (About Section) --- */
+#about img {
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    transition: transform 0.5s ease-in-out;
+}
+
+#about img:hover {
+    transform: scale(1.02);
+}
+
+
+/* --- Kartu Spesies Populer --- */
+.card-species {
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
+    border: none;
+    background-color: white; 
+}
+
+.card-species:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+}
+
+.card-species .card-img-top {
+    height: 220px;
+    object-fit: cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.card-species .card-body {
+    padding: 1.5rem;
+}
+
+.card-species .card-title {
+    color: var(--primary-color); 
+    font-size: 1.5rem;
+}
+
+.card-species .card-text.text-muted {
+    color: var(--muted-text-color) !important; 
+}
+
+
+/* --- Media Showcase (Video & Audio) --- */
+#media-showcase video,
+#media-showcase audio {
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+#media-showcase audio {
+    background-color: white; 
+    border: 1px solid #ddd;
+}
+
+
+/* --- Bagian Newsletter (Form) --- */
+#newsletter {
+    background: linear-gradient(to right, rgba(248,249,250,0.95), rgba(240,240,240,0.95)), url('../assets/img/newsletter-bg.jpg') no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 4rem 0;
+    text-align: center;
+    border-radius: 20px;
+    margin-top: 5rem;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    color: var(--text-color);
+}
+
+#newsletter h2 {
+    color: var(--primary-color); 
+    font-size: 2.8rem;
+    margin-bottom: 1.5rem;
+}
+
+#newsletter p {
+    color: var(--text-color);
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+#newsletter form {
+    background-color: white;
+    padding: 2.5rem;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+#newsletter .form-label {
+    text-align: left;
+    display: block;
+    font-weight: 700;
+    color: var(--text-color);
+}
+
+#newsletter .form-text { 
+    color: var(--muted-text-color) !important;
+}
+
+
+/* --- Footer --- */
+.footer.bg-dark {
+    background-color: var(--dark-bg) !important; 
+}
+
+.footer h5 {
+    color: var(--secondary-color); 
+}
+
+.footer p, .footer ul li a {
+    color: var(--light-text-color) !important;
+}
+
+.footer .text-white-50 {
+    color: rgba(var(--light-text-color-rgb), 0.7) !important; 
+}
+
+.footer .bi { /* Ikon media sosial */
+    color: var(--light-text-color);
+    transition: color 0.3s ease;
+}
+
+.footer .bi:hover {
+    color: var(--secondary-color); 
+}
+
+
+/* --- Animasi Saat Scroll (Elemen Awalnya Tersembunyi) --- */
+.animate-on-scroll,
+.card-animate,
+.media-animate {
+    opacity: 0;
+    transform: translateY(20px); 
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out; 
+}
+
+.animate-on-scroll.animate__animated,
+.card-animate.animate__animated,
+.media-animate.animate__animated {
+    opacity: 1;
+    transform: translateY(0); 
+}
+
+.card-animate.animate__animated {
+    animation: animate__fadeInUp 0.8s ease-out; 
+}
+
+.media-animate.animate__animated {
+    animation: animate__fadeInUp 0.8s ease-out;
+}
+
+
+/* --- Responsive Adjustments --- */
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 6rem 0;
+    }
+
+    .hero-section h1 {
+        font-size: 3rem;
+    }
+
+    .hero-section p.lead {
+        font-size: 1.2rem;
+    }
+}

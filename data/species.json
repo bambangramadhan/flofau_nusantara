@@ -1,0 +1,74 @@
+[
+    {
+      "id": "rafflesia-arnoldii",
+      "type": "flora",
+      "name": "Rafflesia Arnoldii",
+      "common_name": "Bunga Bangkai Raksasa",
+      "scientific_name": "Rafflesia arnoldii",
+      "image": "flora/rafflesia.jpg",
+      "hero_image": "flora/rafflesia.jpg",
+      "description_short": "Bunga raksasa endemik Sumatera dengan bau khas dan ukuran hingga 1 meter.",
+      "description_full": "Rafflesia arnoldii adalah bunga parasit terbesar di dunia, ditemukan di hutan hujan tropis Sumatera dan Kalimantan. Bunga ini tidak memiliki akar, batang, maupun daun, dan hidup dengan menyerap nutrisi dari tumbuhan inang. Dikenal dengan bau busuknya yang menyerupai daging busuk untuk menarik lalat penyerbuk. Proses mekarnya sangat langka dan hanya bertahan beberapa hari.",
+      "habitat": "Hutan hujan tropis di Sumatera dan Kalimantan",
+      "conservation_status": "Rentan (Vulnerable)",
+      "facts": [
+        "Bunga parasit terbesar di dunia.",
+        "Tidak memiliki akar, batang, atau daun.",
+        "Hanya mekar selama 5-7 hari."
+      ]
+    },
+    {
+      "id": "anggrek-bulan",
+      "type": "flora",
+      "name": "Anggrek Bulan",
+      "common_name": "Puspa Pesona",
+      "scientific_name": "Phalaenopsis amabilis",
+      "image": "flora/rafflesia.jpg",
+      "hero_image": "flora/rafflesia.jpg",
+      "description_short": "Anggrek nasional Indonesia dengan kelopak putih bersih dan bentuk elegan.",
+      "description_full": "Anggrek Bulan, atau Phalaenopsis amabilis, adalah salah satu dari tiga bunga nasional Indonesia. Dikenal karena keindahan dan keanggunannya, anggrek ini memiliki kelopak putih yang lebar dengan sedikit corak kuning atau ungu di bagian tengah. Tumbuh epifit (menempel pada pohon lain) di berbagai wilayah Indonesia, dari Sumatera hingga Papua. Anggrek ini populer sebagai tanaman hias dan menjadi simbol keindahan alam tropis.",
+      "habitat": "Hutan hujan dataran rendah, tumbuh menempel di pohon (epifit)",
+      "conservation_status": "Tidak Terancam (Least Concern)",
+      "facts": [
+        "Salah satu dari tiga bunga nasional Indonesia.",
+        "Dapat mekar selama berminggu-minggu.",
+        "Populer sebagai tanaman hias di seluruh dunia."
+      ]
+    },
+    {
+      "id": "harimau-sumatera",
+      "type": "fauna",
+      "name": "Harimau Sumatera",
+      "common_name": "Harimau Sumatera",
+      "scientific_name": "Panthera tigris sumatrae",
+      "image": "fauna/harimau-sumatera.jpg",
+      "hero_image": "fauna/harimau-sumatera-hero.jpg",
+      "description_short": "Subspesies harimau terkecil yang endemik Sumatera, sang predator puncak.",
+      "description_full": "Harimau Sumatera (Panthera tigris sumatrae) adalah salah satu subspesies harimau yang paling terancam punah di dunia, hanya ditemukan di Pulau Sumatera. Ciri khasnya adalah ukuran yang lebih kecil dibanding harimau lain, serta loreng hitam yang lebih rapat. Mereka adalah predator soliter yang berperan penting dalam menjaga keseimbangan ekosistem hutan. Populasi saat ini diperkirakan kurang dari 400 individu di alam liar, menghadapi ancaman besar dari deforestasi dan perburuan liar.",
+      "habitat": "Hutan hujan tropis dataran rendah hingga pegunungan di Sumatera",
+      "conservation_status": "Kritis (Critically Endangered)",
+      "facts": [
+        "Subspesies harimau terkecil yang masih hidup.",
+        "Populasi di alam liar kurang dari 400 individu.",
+        "Dihadapkan pada ancaman deforestasi dan perburuan."
+      ]
+    },
+    {
+      "id": "komodo",
+      "type": "fauna",
+      "name": "Komodo",
+      "common_name": "Biawak Komodo",
+      "scientific_name": "Varanus komodoensis",
+      "image": "fauna/komodo.jpeg",
+      "hero_image": "fauna/komodo.jpeg",
+      "description_short": "Kadal terbesar di dunia, endemik di beberapa pulau di Nusa Tenggara Timur.",
+      "description_full": "Komodo (Varanus komodoensis) adalah spesies kadal purba raksasa yang hanya ditemukan di Pulau Komodo, Rinca, Flores, Gili Motang, dan Gili Dasami di Nusa Tenggara Timur. Mereka adalah predator puncak yang dapat tumbuh hingga 3 meter dan memiliki gigitan beracun. Komodo adalah hewan berdarah dingin yang aktif berburu di siang hari, dan mampu melacak mangsanya dengan indra penciuman yang tajam.",
+      "habitat": "Padang savana kering dan hutan tropis di pulau-pulau kecil Nusa Tenggara Timur",
+      "conservation_status": "Terancam Punah (Endangered)",
+      "facts": [
+        "Kadal terbesar di dunia.",
+        "Memiliki gigitan beracun.",
+        "Hanya ditemukan di beberapa pulau di NTT."
+      ]
+    }
+  ]
